@@ -38,6 +38,8 @@ Ninja Spirit é um jogo curto visando testar as funcionabilidades de maquina de 
 
 ✔️ Verificar dados usando Scriptable Objects
 
+![Ninja](https://i.ibb.co/Pmw0PGK/Ninja.png)
+
 ## Distribuição
 [Link para teste da versão disponibilizada.](https://github.com/MRJackFrost/Triangulo_Funcoes/blob/master/Program.cs)
 
