@@ -50,7 +50,7 @@ unity;
 Adicione o projeto na unity 2D 2022.3.21f1
 
 ## Testes realizados
-Os testes foram realizados ainda estão sendo realizados na unity;
+Os testes ainda estão sendo realizados na unity;
 
 ## Banco de Dados 🗂️
 Sem acesso a banco de dados
@@ -62,7 +62,7 @@ Sem acesso a banco de dados
 Sem nenhum problema durante o projeto
 
 ## Recursos de inseridos 🧰
-Nenhum recurso a ser adicionado(projeto finalizado)
+Nenhum recurso novo adicionado ainda
 
 ## Desenvolvedores/Contribuintes:
 MRjackFrost - Bruno
