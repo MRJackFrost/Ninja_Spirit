@@ -39,9 +39,6 @@ Ninja Spirit é um jogo curto visando testar as funcionabilidades de maquina de 
 
 ![BlackCat](https://i.ibb.co/Pmw0PGK/Ninja.png)
 
-## Distribuição
-[Link para teste da versão disponibilizada.](https://github.com/MRJackFrost/Triangulo_Funcoes/blob/master/Program.cs)
-
 ## Pré-requisitos ⚠️    
 unity;
 
