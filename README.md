@@ -2,6 +2,7 @@
 Ninja Spirit: Pixel Chronicles
 ## Versão: 1.0 
 ## Status do Projeto: :runner: Em andamento
+![Ninja](https://i.ibb.co/0p7sZSh/2024-05-21-22-50-03.gif)
 
 ## Tópicos
 🔹 Descrição do projeto
@@ -36,7 +37,7 @@ Ninja Spirit é um jogo curto visando testar as funcionabilidades de maquina de 
 
 ✔️ Verificar dados usando Scriptable Objects
 
-![Ninja](https://i.ibb.co/sPQgtKy/2024-05-21-23-12-03.gif)
+![BlackCat](https://i.ibb.co/Pmw0PGK/Ninja.png)
 
 ## Distribuição
 [Link para teste da versão disponibilizada.](https://github.com/MRJackFrost/Triangulo_Funcoes/blob/master/Program.cs)
