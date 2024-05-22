@@ -2,7 +2,7 @@
 Ninja Spirit: Pixel Chronicles
 ## Versão: 1.0 
 ## Status do Projeto: :runner: Em andamento
-![Ninja]([URL_da_Imagem](https://ibb.co/hxG7cL0))
+![Ninja](https://ibb.co/hxG7cL0)
 
 
 ## Tópicos
