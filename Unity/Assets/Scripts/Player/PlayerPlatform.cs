@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerPlatform : MonoBehaviour
 {
@@ -16,19 +17,73 @@ public class PlayerPlatform : MonoBehaviour
 
     void Update()
     {
+        Walk();
+        Die();
+    }
+
+
+    private void Die()
+    {
+        if (GameManager.Instance.life <= 0)
+        {
+            Destroy(this);
+            SceneManager.LoadScene("Menu");
+        }
+    }
+
+    private void Walk()
+    {
         float hor = Input.GetAxis("Horizontal");
-        Vector2 direction = Vector2.right * hor;
-        rb.velocity = new Vector2(direction.x*speed, rb.velocity.y);
+        float ver = Input.GetAxis("Vertical");
+        
+        Vector2 direction = new Vector2(hor, ver).normalized;
+        rb.velocity = new Vector2(direction.x*speed, direction.y*speed);
 
         animator.SetFloat("hor", Mathf.Abs(hor));
 
-        if (hor > 0)
+        if (Input.GetKeyDown(KeyCode.A))
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            animator.SetBool("Right", false);
+            animator.SetBool("Left", true);
+            animator.SetBool("Foward", false);
+            animator.SetBool("Backward", false);
         }
-        else if (hor < 0)
+        else if (Input.GetKeyUp(KeyCode.A))
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            animator.SetBool("Left", false);
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            animator.SetBool("Right", true);
+            animator.SetBool("Left", false);
+            animator.SetBool("Foward", false);
+            animator.SetBool("Backward", false);
+        }
+        else if (Input.GetKeyUp(KeyCode.D))
+        {
+            animator.SetBool("Right", false);
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            animator.SetBool("Right", false);
+            animator.SetBool("Left", false);
+            animator.SetBool("Foward", false);
+            animator.SetBool("Backward", true);
+        }
+        else if (Input.GetKeyUp(KeyCode.W))
+        {
+            animator.SetBool("Backward", false);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            animator.SetBool("Right", false);
+            animator.SetBool("Left", false);
+            animator.SetBool("Foward", true);
+            animator.SetBool("Backward", false);
+        }
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            animator.SetBool("Foward", false);
         }
     }
 }

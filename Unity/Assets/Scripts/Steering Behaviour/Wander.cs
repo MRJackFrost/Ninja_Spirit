@@ -42,7 +42,7 @@ public class Wander : MonoBehaviour {
 
 		rb.velocity = velocity;
 
-		Rotate();
+		 Rotate();
 		
 		// chegou no target
 		if (Vector2.Distance(targetPosition, transform.position)  < 0.5f)
